@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+/* navigation styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -86,20 +87,110 @@
 .hamburger::after {
   top: 8px; 
 }
+/* footer style */
+.footer {
+  background-color: rgba(1, 172, 253, 1); 
+  color: white;
+  padding: 20px 10px; 
+  margin-bottom: 50px;
+}
+
+.footer-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+}
+.footer-first .logo-and-title {
+  display: flex;
+  align-items: center;
+}
+.footer-first {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  flex: 1; 
+  max-width: 300px; 
+}
+
+.footer-first img {
+  height: 50px; 
+  margin-bottom: 10px;
+ background-color: white;
+}
+
+.footer-first h3 {
+  font-size: 1.5rem;
+  display: flex;
+  margin-left: 10px;
+}
+
+.footer-first p {
+  margin: 0; 
+  font-size: 1rem; 
+  line-height: 1.5; 
+  margin-top: 10px; 
+}
+.footer-second ul {
+  list-style: none; 
+  padding: 0; 
+  margin: 0;
+}
+
+.footer-second h3 {
+  margin-bottom: 10px; /
+}
+
+.footer-second li {
+  margin-bottom: 5px; 
+}
+
+.footer-second a {
+  color: white; 
+  text-decoration: none; 
+}
+/* media query */
 @media screen and (max-width: 576px) {
   .school h3 {
     display: none; 
   }
-
   .nav-links,
   .btn {
     display: none; 
   }
-
   .hamburger {
     display: block; 
   }
   .navbar {
     border-bottom: 1px solid orange; 
+  }
+  .footer-container {
+    flex-direction: column; 
+    align-items: start; 
+    gap: 10px; 
+  }
+  .footer-first, .footer-second, .footer-thrid {
+    max-width: 100%; 
+    text-align: start;
+  }
+  .footer-first img {
+    margin-bottom: 15px; 
+  }
+  .footer-first h3 {
+    font-size: 1.25rem; 
+    margin-left: 5px; 
+  }
+  .footer-first p {
+    font-size: 1rem; 
+    text-align: start; 
+  }
+
+  .footer-second ul {
+    padding-left: 0; 
+  }
+  .footer-thrid img {
+    margin: 5px; 
+    height: 30px; 
   }
 }
