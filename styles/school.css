@@ -132,8 +132,15 @@
   width: 100%; 
   height: auto; 
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* minpoint in the body part */
 .midpoint {
+  background-color: antiquewhite;
   text-align: center;
   padding: 50px 20px;
   background-image: url(../assets/bg.png)
@@ -186,7 +193,7 @@
 .thirdkey {
   color: #7b5db8;
 }
-/* Gradient Backgrounds for Cards */
+
 .firstcard{
   background: linear-gradient(145deg, #e0f7fa, #ffffff);
 }
@@ -222,6 +229,100 @@
   background-color: orange;
   border-radius: 80px;
 
+}
+/* our stories parts */
+.stories {
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 20px;
+  background-image: url(../assets/bg.png);
+}
+
+.stories h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color:black ;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr ;
+  gap: 25px;
+  align-items: start;
+}
+
+.primary-container {
+  background:white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-row: span 2; 
+}
+
+.primary-container img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.primary-container h3 {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+.primary-container .sbtn1 {
+  background-color:rgba(60, 216, 232, 1);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: -27px;
+  margin-left: 40px;
+}
+
+.secondary-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  border-radius: 5px;
+  grid-row: span 2;
+}
+
+.story {
+  background: white;
+  padding: 0px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.story img {
+  width: 100%;
+}
+
+.story h4 {
+  font-size: 1rem;
+  margin: 5px 0;
+  color:black;
+}
+
+.story button {
+  background-color: rgba(149, 178, 38, 1);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-top: -40px;
+  /* why it doesnot work i do not know */
+  margin-left: 10px;
+}
+
+.sbtn-main {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 /* footer style */
 .footer {
@@ -292,7 +393,7 @@
     display: none; 
   }
   .nav-links,
-  .btn,.arrow  {
+  .btn,.arrow,.primary-container  {
     display: none; 
   }
   .hamburger {
@@ -351,6 +452,27 @@
     max-width: 100%; 
     text-align: start;
   }
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+}
+
+.secondary-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+}
+
+.story {
+    text-align: center; 
+}
+.story img {
+    width: 100%;
+    height: auto; 
+}
+.story h4 {
+    font-size: 1rem; 
+}
   .footer-first img {
     margin-bottom: 15px; 
   }
