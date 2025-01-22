@@ -87,6 +87,52 @@
 .hamburger::after {
   top: 8px; 
 }
+/* banner styles */
+.banner {
+  background-color: white 
+  padding: 40px 10px;
+}
+.banner-container {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px; 
+  margin: 60px;
+}
+.banner-first {
+  text-align: left; 
+  padding-right: 10px;
+}
+.banner-first h2 {
+  font-size: 2rem;
+  line-height: 1;
+}
+.heading-clr1 {
+  color: orange;
+}
+
+.heading-clr2 {
+  color: skyblue; 
+}
+.banner-first p {
+  font-size: 1rem;
+  color: black;
+  margin-top: 15px;
+}
+.btn2 {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.banner-second img {
+  width: 100%; 
+  height: auto; 
+}
+
 /* footer style */
 .footer {
   background-color: rgba(1, 172, 253, 1); 
@@ -165,10 +211,44 @@
   .navbar {
     border-bottom: 1px solid orange; 
   }
+  .banner-container {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+  }
+  .banner-second {
+    order: -1; 
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+  .banner-first {
+    width: 100%; 
+    padding: 0 20px; 
+  }
+  .banner-first h2 {
+    font-size: 1.5rem; 
+    line-height: 1.5; 
+    margin-top: 20px;
+  }
+  .banner-first p {
+    font-size: 1rem; 
+    margin-top: 15px; 
+  }
+  .btn2 {
+    padding: 10px 25px; 
+    font-size: 1rem; 
+    margin-top: 15px; 
+    background-color: black; 
+    color: white; 
+  }
+  .banner-second img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 20px;
+  }
   .footer-container {
     flex-direction: column; 
-    align-items: start; 
-    gap: 10px; 
+    align-items: start;  
   }
   .footer-first, .footer-second, .footer-thrid {
     max-width: 100%; 
@@ -178,7 +258,7 @@
     margin-bottom: 15px; 
   }
   .footer-first h3 {
-    font-size: 1.25rem; 
+    font-size: 1rem; 
     margin-left: 5px; 
   }
   .footer-first p {
