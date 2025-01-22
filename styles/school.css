@@ -87,10 +87,39 @@
 .hamburger::after {
   top: 8px; 
 }
+/* Marquee Styles */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+  font-size: 1rem;
+  color:black;
+  font-weight: bold;
+}
+@keyframes scroll {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
 /* banner styles */
 .banner {
   background-color: white 
-  padding: 40px 10px;
+
 }
 .banner-container {
   display: flex; 
