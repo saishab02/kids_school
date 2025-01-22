@@ -41,7 +41,7 @@
 
 .nav-links a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 25px;
   color: skyblue;
 }
 
@@ -132,7 +132,97 @@
   width: 100%; 
   height: auto; 
 }
+/* minpoint in the body part */
+.midpoint {
+  text-align: center;
+  padding: 50px 20px;
+  background-image: url(../assets/bg.png)
+}
 
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: black;
+}
+.cardspart {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+.cardspart div {
+  flex: 1;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+  text-align: center;
+}
+.cardspart img {
+  width: 100px;
+  margin: 0 auto 15px;
+
+}
+.cardspart h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+.cardspart h4 {
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.fristkey {
+  color: skyblue;
+}
+
+.secondkey{
+  color: orange; 
+}
+.thirdkey {
+  color: #7b5db8;
+}
+/* Gradient Backgrounds for Cards */
+.firstcard{
+  background: linear-gradient(145deg, #e0f7fa, #ffffff);
+}
+
+.secondcard{
+  background: linear-gradient(145deg, #fff3e0, #ffffff);
+}
+
+.thirdcard {
+  background: linear-gradient(145deg, #ede7f6, #ffffff);
+}
+.arrow{
+ 
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.firstarrow{
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+  padding: 15px;
+  background-color: orange;
+  border-radius: 80px;
+}
+.secondarrow{
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+  padding: 15px;
+  background-color: orange;
+  border-radius: 80px;
+
+}
 /* footer style */
 .footer {
   background-color: rgba(1, 172, 253, 1); 
@@ -202,7 +292,7 @@
     display: none; 
   }
   .nav-links,
-  .btn {
+  .btn,.arrow  {
     display: none; 
   }
   .hamburger {
@@ -245,6 +335,13 @@
     width: 100%; 
     height: auto;
     margin-bottom: 20px;
+  }
+  .cardspart {
+    flex-direction: column; 
+    align-items: center;
+  }
+  .cardspart div {
+    max-width: 90%; 
   }
   .footer-container {
     flex-direction: column; 
