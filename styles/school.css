@@ -1,4 +1,105 @@
-.school{
-    display: flex;
-    font-size: 20px;
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.school {
+  display: flex;
+  align-items: center;
+}
+.school img {
+  height: 50px;
+  margin-right: 7px;
+}
+.school h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: skyblue;
+}
+
+.nav-links a.home {
+  color: orange;
+}
+
+.nav-links a.admission {
+  color: rgb(69, 69, 175);
+}
+
+.btn {
+  background-color: #FF900E;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 8px;
+  border: none;
+}
+
+.hamburger {
+  display: none; 
+  width: 30px; 
+  height: 4px; 
+  background-color: black;
+  position: relative; 
+  
+}
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  left: 0;
+}
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px; 
+}
+@media screen and (max-width: 576px) {
+  .school h3 {
+    display: none; 
+  }
+
+  .nav-links,
+  .btn {
+    display: none; 
+  }
+
+  .hamburger {
+    display: block; 
+  }
+  .navbar {
+    border-bottom: 1px solid orange; 
+  }
 }
